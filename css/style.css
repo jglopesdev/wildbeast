@@ -23,6 +23,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 5px;
 }
 /* Grid Geral */
 
@@ -53,7 +54,7 @@ img {
 }
 .header nav a {
   padding: 10px;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.125rem;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -86,12 +87,28 @@ img {
   transition: 0.1s ease-out;
 }
 
+/* CONTENT */
 .content {
   grid-area: content;
 }
+
+/* ANUNCIOS */
 .anuncios {
   grid-area: anuncios;
+  background-color: #fafbfc;
+  display: grid;
+  align-content: start;
+  gap: 30px;
+  padding: 30px;
 }
+
+/* FOOTER */
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }
