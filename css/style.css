@@ -25,7 +25,7 @@ img {
   display: block;
   border-radius: 5px;
 }
-/* Grid Geral */
+/* GRID GERAL */
 
 .estrutura {
   display: grid;
@@ -35,6 +35,28 @@ img {
     "sidenav content anuncios"
     "footer footer footer";
 }
+
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer";
+  }
+}
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidemav"
+      "content"
+      "anuncios"
+      "footer";
+  }
+}
+
 /* HEADER */
 .header {
   grid-area: header;
